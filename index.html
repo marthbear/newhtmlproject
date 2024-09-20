@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome to my virtual terrarium!
+        </title>
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #e0f7fa;
+                    color: #333;
+                    text-align: center;
+                    margin: 0;
+                    padding: 20px;
+                }
+        
+                h1 {
+                    font-size: 2.5em;
+                    margin-bottom: 20px;
+                    color: #00796b;
+                }
+        
+                #page {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 1200px;
+                    margin: auto;
+                }
+        
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+                    margin-right: 20px;
+                }
+        
+                .plant-holder {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    padding: 10px;
+                }
+        
+                .plant {
+                    max-width: 100%;
+                    border-radius: 5px;
+                }
+        
+                #terrarium {
+                    position: relative;
+                    width: 300px;
+                    height: 400px;
+                    margin: 0 auto;
+                    background: #b2dfdb;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                }
+        
+                .jar-top {
+                    background-color: #00796b;
+                    height: 40px;
+                    border-radius: 15px 15px 0 0;
+                    position: relative;
+                }
+        
+                .jar-glossy-long, .jar-glossy-short {
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    position: absolute;
+                }
+        
+                .jar-glossy-long {
+                    width: 100px;
+                    height: 20px;
+                    top: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+        
+                .jar-glossy-short {
+                    width: 70px;
+                    height: 15px;
+                    top: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+        
+                .dirt {
+                    background: #795548;
+                    height: 50px;
+                    border-radius: 0 0 15px 15px;
+                }
+        
+                .jar-bottom {
+                    background-color: #4e342e;
+                    height: 20px;
+                    border-radius: 0 0 15px 15px;
+                }
+            </style>
+        
+    </head>
+    <body>
+        <h1>My Terrarium</h1>
+        <div id="page">
+            <div id="left-container" class="container">
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant1" src="./images/plant1.png" /> 
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant2" src="./images/plant2.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant3" src="./images/plant3.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant4" src="./images/plant4.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant5" src="./images/plant5.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant6" src="./images/plant6.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant7" src="./images/plant7.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant8" src="./images/plant8.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant9" src="./images/plant9.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant10" src="./images/plant10.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant11" src="./images/plant11.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant12" src="./images/plant12.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant13" src="./images/plant13.png"/>
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant14" src="./images/plant14.png"/>
+                </div>
+            </div>
+            <div id="terrarium">
+                <div class="jar-top">
+                <div class="jar-glossy-long"></div>
+                <div class="jar-glossy-short"></div>
+            </div>
+            <div class="dirt"></div>
+            <div class="jar-bottom"></div>
+            </div>
+        </div>
+    </body>
+</html>
